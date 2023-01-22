@@ -1,0 +1,15 @@
+39.999999999999986 WPM 	 Gracza: Jaro 	 Pe³ne dane: Speed:  4.00 CPS - znaków na sekunde 
+ 240.00 CPM - znaków na minutê 
+ s³ów na sekundê:  0.67 s³ów na minutrê:  40.00 
+27.272727272727273 WPM 	 Gracza: max 	 Pe³ne dane: Speed:  4.32 CPS - znaków na sekunde 
+ 259.09 CPM - znaków na minutê 
+ s³ów na sekundê:  0.45 s³ów na minutrê:  27.27 
+41.38 WPM 	 Gracza: j 	 Pe³ne dane: Speed:  3.45 CPS - znaków na sekunde 
+ 206.90 CPM - znaków na minutê 
+ s³ów na sekundê:  0.69 s³ów na minutrê:  41.38 
+10.80 WPM 	 Gracza: JF 	 Pe³ne dane: Speed:  0.65 CPS - znaków na sekunde 
+ 38.89 CPM - znaków na minutê 
+ s³ów na sekundê:  0.19 s³ów na minutrê:  11.11 
+3.90 WPM 	 Gracza: JF 	 Pe³ne dane: Speed:  4.87 CPS - znaków na sekunde 
+ 292.31 CPM - znaków na minutê 
+ s³ów na sekundê:  0.51 s³ów na minutrê:  30.77 
