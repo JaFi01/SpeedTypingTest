@@ -2,12 +2,6 @@ import threading
 import tkinter as tk
 import time
 import random
-import xlwt
-
-class Result:
-    def __init__(self, time, text):
-        self.time = time
-        self.text = text
 
 class Leaderboard:
     def __init__(self):
@@ -15,12 +9,30 @@ class Leaderboard:
         self.root.title("Leaderbaord Speed typing")
         self.root.geometry("800x600")
         self.frame = tk.Frame(self.root)
+        self.frame.pack()
+
+        self.results_label = tk.Label(self.frame, text=self.get_top_results(), font=("Helvetica", 10))
+        self.results_label.grid(row=0, column=0)
 
         self.root.mainloop()
-        file = open("wyniki.txt", "r")
-        records = file.readline()
-        records.sort()
 
+    def sort_results_by_time(self):
+        with open("wyniki.txt", "r") as file:
+            lines = file.readlines()
+
+        def sort_key(line):
+            return float(line.split("\t")[0])
+
+        lines.sort(key=sort_key, reverse=True)
+
+        with open("wyniki.txt", "w") as file:
+            file.writelines(lines)
+
+    def get_top_results(self):
+        with open("wyniki.txt", "r") as file:
+            lines = file.readlines()
+        top_five_lines = lines[:5]
+        return '\n'.join(top_five_lines)
 
 class Game:
     def __init__(self):
@@ -108,11 +120,9 @@ class Game:
         osoba = self.username_entry.get()
         wynik = self.speed_label.cget('text')
         czas = self.end_result
+        with open("wyniki.txt", 'a') as save:
+            save.write(f"{czas:.2f} \t WPM \t Gracza: {osoba} \t Pełne dane: {wynik} \n")
 
-        Result(self.counter, wynik)
-        zapis=open("wyniki.txt", "a")
-        zapis.write(f"{self.counter:.2f} WPM \t Gracza: {osoba} \t Pełne dane: {wynik} \n")
-        zapis.close()
 
 Game()
 # https://www.mit.edu/~ecprice/wordlist.10000
