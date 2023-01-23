@@ -44,7 +44,7 @@ class Game:
         # dane użytkownika
         self.username_label = tk.Label(self.frame, text="Nazwa gracza: ", font=("Helvetica", 14))
         self.username_label.grid(row=0, column=0, padx=5, pady=5)
-        self.username_entry = tk.Entry(self.frame, width=10, font=("Helvetica", 14))
+        self.username_entry = tk.Entry(self.frame, width=20, font=("Helvetica", 14))
         self.username_entry.grid(row=0, column=1, padx=5, pady=5)
         # tworzenie zdania do przepisania
         self.sample_label = tk.Label(self.frame, text=self.generate_sentence(), font=("Helvetica", 14))
@@ -62,10 +62,10 @@ class Game:
         self.speed_label.grid(row=3, column=0, columnspan=3, padx=5, pady=10)
 
         self.reset_button = tk.Button(self.frame, text="Reset", command=self.reset, font=("Helvetica", 18))
-        self.reset_button.grid(row=4, column=0, columnspan=3, padx=5, pady=10)
-        # TODO wyniki
+        self.reset_button.grid(row=4, column=0, columnspan=1, padx=5, pady=10)
+        # DONE wyniki
         self.leaderboard = tk.Button(self.frame, text="Ranking wyników", command=Leaderboard, font=("Helvetica", 18))
-        self.leaderboard.grid(row=4, column=1, columnspan=3, padx=5, pady=10)
+        self.leaderboard.grid(row=4, column=1, columnspan=1, padx=5, pady=10)
 
         self.frame.pack(expand=True)
 
@@ -112,8 +112,8 @@ class Game:
         self.input_entry.delete(0, tk.END)
 
     def generate_sentence(self):
-        words = open("venv/words.txt", "r").read().split("\n")
-        chosen_words = random.sample(words, 2)
+        words = open("words.txt", "r").read().split("\n")
+        chosen_words = random.sample(words, 10)
         return chosen_words
 
     def safe_results(self):
