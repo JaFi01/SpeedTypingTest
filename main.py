@@ -7,13 +7,12 @@ class Leaderboard:
     def __init__(self):
         self.root = tk.Tk()
         self.root.title("Leaderbaord Speed typing")
-        self.root.geometry("800x600")
+        self.root.geometry("900x600")
         self.frame = tk.Frame(self.root)
         self.frame.pack()
 
         self.results_label = tk.Label(self.frame, text=self.get_top_results(), font=("Helvetica", 10))
-        self.results_label.grid(row=0, column=0)
-
+        self.results_label.grid(row=1, column=1)
         self.root.mainloop()
 
     def sort_results_by_time(self):
@@ -25,10 +24,11 @@ class Leaderboard:
 
         lines.sort(key=sort_key, reverse=True)
 
-        with open("wyniki.txt", "w") as file:
-            file.writelines(lines)
+        with open("wyniki.txt", "w") as file1:
+            file1.writelines(lines)
 
     def get_top_results(self):
+        self.sort_results_by_time()
         with open("wyniki.txt", "r") as file:
             lines = file.readlines()
         top_five_lines = lines[:5]
@@ -118,7 +118,7 @@ class Game:
 
     def safe_results(self):
         osoba = self.username_entry.get()
-        wynik = self.speed_label.cget('text')
+        wynik = self.speed_label.cget('text').replace("\n", "\t")
         czas = self.end_result
         with open("wyniki.txt", 'a') as save:
             save.write(f"{czas:.2f} \t WPM \t Gracza: {osoba} \t Pełne dane: {wynik} \n")

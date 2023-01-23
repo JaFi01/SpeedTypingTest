@@ -1,6 +1,10 @@
-37.50 	 WPM 	 Gracza: Jaro 	 Pe³ne dane: Speed:  3.12 CPS - znaków na sekunde 
- 187.50 CPM - znaków na minutê 
- s³ów na sekundê:  0.62 s³ów na minutrê:  37.50 
-18.75 	 WPM 	 Gracza: Mike 	 Pe³ne dane: Speed:  2.81 CPS - znaków na sekunde 
- 168.75 CPM - znaków na minutê 
- s³ów na sekundê:  0.31 s³ów na minutrê:  18.75 
+133.33 	 WPM 	 Gracza: Jan 	 Pe³ne dane: Speed:  7.78 CPS - znaków na sekunde 	 466.67 CPM - znaków na minutê 	 s³ów na sekundê:  2.22 s³ów na minutrê:  133.33
+37.50 	 WPM 	 Gracza: Jan 	 Pe³ne dane: Speed:  5.31 CPS - znaków na sekunde 	 318.75 CPM - znaków na minutê 	 s³ów na sekundê:  0.62 s³ów na minutrê:  37.50 
+36.36 	 WPM 	 Gracza: aa 	 Pe³ne dane: Speed:  3.64 CPS - znaków na sekunde 	 218.18 CPM - znaków na minutê 	 s³ów na sekundê:  0.61 s³ów na minutrê:  36.36 
+24.49 	 WPM 	 Gracza: Jaro 	 Pe³ne dane: Speed:  3.47 CPS - znaków na sekunde 	 208.16 CPM - znaków na minutê 	 s³ów na sekundê:  0.41 s³ów na minutrê:  24.49 
+24.00 	 WPM 	 Gracza: Jerzy 	 Pe³ne dane: Speed:  2.40 CPS - znaków na sekunde 	 144.00 CPM - znaków na minutê 	 s³ów na sekundê:  0.40 s³ów na minutrê:  24.00 
+24.00 	 WPM 	 Gracza: Jerzy 	 Pe³ne dane: Speed:  2.40 CPS - znaków na sekunde 	 144.00 CPM - znaków na minutê 	 s³ów na sekundê:  0.40 s³ów na minutrê:  24.00 
+20.34 	 WPM 	 Gracza: Jaanusz 	 Pe³ne dane: Speed:  2.20 CPS - znaków na sekunde 	 132.20 CPM - znaków na minutê 	 s³ów na sekundê:  0.34 s³ów na minutrê:  20.34 
+20.34 	 WPM 	 Gracza: Jaro 5 	 Pe³ne dane: Speed:  2.37 CPS - znaków na sekunde 	 142.37 CPM - znaków na minutê 	 s³ów na sekundê:  0.34 s³ów na minutrê:  20.34 
+17.39 	 WPM 	 Gracza: Jarek 	 Pe³ne dane: Speed:  2.03 CPS - znaków na sekunde 	 121.74 CPM - znaków na minutê 	 s³ów na sekundê:  0.29 s³ów na minutrê:  17.39 
+13.04 	 WPM 	 Gracza: Jerzy4 	 Pe³ne dane: Speed:  1.74 CPS - znaków na sekunde 	 104.35 CPM - znaków na minutê 	 s³ów na sekundê:  0.22 s³ów na minutrê:  13.04 
